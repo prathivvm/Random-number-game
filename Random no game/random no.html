@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guss number game 😊 </title>
+</head>
+
+
+<div id="bg1">  
+    <h1 >Guss The numbers</h1>
+<input id="guss the number">
+<button onclick="check()">check</button>
+
+<p id="result">you are wrong/right<address>
+    <p id="spin"><br><i class="fa fa-spinner w3-spin" style="font-size:64px"></i></p></p>
+    <p id="score">score:10</p></address>
+
+</div>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </div>
+
+<style>
+    #bg1{
+        background-image: url("1700.jpg");
+        height: 100vh;
+        width: 100vw;
+        padding-left: 25px;
+    }
+   
+    #p{
+        padding-left:50%;
+    }
+    </style> 
+    </body>
+<script>
+    document.getElementById("score").style.color = "blue";
+    var input=document.getElementById("guss the number")
+    var result=document.getElementById("result")
+    var score=document.getElementById("score")
+    var randomnumber= Math.floor(Math.random()*10)+1
+    var totalscore=10
+    function check()
+    {
+        var enterednumber=input.value
+        if(randomnumber==enterednumber)
+        {
+            console.log("right")
+            result.textContent="right"
+            alert("you woned score is:"+totalscore)
+        }else
+        {
+            totalscore=totalscore-1
+            score.textContent="score:"+totalscore
+            console.log("wrong")
+            result.textContent="wrong"
+         
+        }
+
+    }
+
+</script>
+</html>

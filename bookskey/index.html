@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookskey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="navbar">
+    <h1>Bookskey</h1>
+</div>
+<div class="container">
+    <div class="book-container">
+    <h2>Kingdoms of Sand</h2>
+    <h5>Daniel Arenson</h5>
+    <p>Game of Thrones meets Spartacus in an epic saga of sand and splendor. This bundle contains the first three novels of Kingdoms of Sand, a fantasy series from a USA Today bestselling author. That’s over 1,000 pages of battles, intrigue, and magic.
+        Sweeping from snowy forests to cruel deserts, from bazaars of wonder to fields of war, here is a tale of legionaries and lepers, priests and paupers, kings and crows. Here a girl travels across endless dunes, seeking magic; a cruel prince struggles to claim a bloodstained throne; and a young soldier fights to hold back an overwhelming host. As the empire spreads, the fate of one family--and of all civilization--stands upon a knife’s edge, for under the storm of war, even the greatest nations are but kingdoms of sand.</p>
+<button onclick="deletebook(event)" >delete</button>
+</div>
+</div>
+<div class="popup-overlay"></div>
+<div class="popup-box">
+    <h2>Add book</h2>
+    <form>
+        <input type="text" placeholder="Remind date" id="book-title-input">
+        <input type="text" placeholder="Events[like,function,tablets..etc]" id="book-title-author">
+        <textarea placeholder="Reminder" id="book-description"></textarea>
+    <button id="Add book">ADD</button>
+    <button id="cancel-popub">CANCEL</button>
+    </form>
+</div>
+<button class="add-button" id="add popup-button">+</button>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
